@@ -1,8 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,400i,500,500i,600,600i,700,700i');
 
 body {
+  font-family: 'Montserrat', sans-serif;
   padding: 70px 20px 0 80px;
   background: #f9f9f9;
+  color: #333;
 }
 
 * {
@@ -11,6 +14,19 @@ body {
 
 .content-box {
   background: #fff;
-  padding: 1.5rem;
+  padding: 1.5rem 1rem;
   border-radius: 7px;
+}
+
+.list-filter {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+
+  .list-filter__btn {
+    background: none;
+    border: none;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin: 0 1rem;
+  }
 }

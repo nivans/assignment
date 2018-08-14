@@ -13,7 +13,7 @@ export class ProjectsService {
       location: 'Russia',
       author: 'James Wilson',
       date: 'Nov. 2017',
-      status: 1
+      status: 'Success'
     },
     {
       title: 'CGX Stax innovation',
@@ -22,7 +22,7 @@ export class ProjectsService {
       location: 'Russia',
       author: 'James Wilson',
       date: 'Nov. 2017',
-      status: 1
+      status: 'Success'
     },
     {
       title: 'CGX Stax innovation',
@@ -31,7 +31,7 @@ export class ProjectsService {
       location: 'Russia',
       author: 'James Wilson',
       date: 'Nov. 2017',
-      status: 1
+      status: 'Success'
     },
     {
       title: 'CGX Stax innovation',
@@ -40,7 +40,7 @@ export class ProjectsService {
       location: 'Russia',
       author: 'James Wilson',
       date: 'Nov. 2017',
-      status: 1
+      status: 'Success'
     },
     {
       title: 'CGX Stax innovation',
@@ -49,7 +49,7 @@ export class ProjectsService {
       location: 'Russia',
       author: 'James Wilson',
       date: 'Nov. 2017',
-      status: 1
+      status: 'Success'
     },
     {
       title: 'CGX Stax innovation',
@@ -58,7 +58,7 @@ export class ProjectsService {
       location: 'Russia',
       author: 'James Wilson',
       date: 'Nov. 2017',
-      status: 1
+      status: 'Success'
     },
     {
       title: 'CGX Stax innovation',
@@ -67,7 +67,7 @@ export class ProjectsService {
       location: 'Russia',
       author: 'James Wilson',
       date: 'Nov. 2017',
-      status: 1
+      status: 'Success'
     },
     {
       title: 'CGX Stax innovation',
@@ -76,7 +76,7 @@ export class ProjectsService {
       location: 'Russia',
       author: 'James Wilson',
       date: 'Nov. 2017',
-      status: 1
+      status: 'Success'
     }
   ];
 

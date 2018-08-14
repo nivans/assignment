@@ -1,0 +1,37 @@
+<div class="project-card"
+     *ngIf="project">
+  <div class="project-card-thumb">
+    <img src="{{ project.thumbnail }}" />
+
+    <div class="project-card-status">
+      {{ project.status }}
+    </div>
+  </div>
+
+  <div class="project-card-content">
+
+    <h2 class="project-card__title">
+      {{ project.title }}
+    </h2>
+
+    <p class="project-card__description">
+      {{ project.description }}
+    </p>
+
+    <footer class="project-card-footer">
+      <div class="project-card-location">
+        <i class="fa fa-location-arrow"></i>
+        {{ project.location }}
+      </div>
+      <div class="project-card-location">
+        <i class="fa fa-user"></i>
+        {{ project.author }}
+      </div>
+      <div class="project-card-location">
+        <i class="fa fa-calendar"></i>
+        {{ project.date }}
+      </div>
+    </footer>
+
+  </div>
+</div>

@@ -1,21 +1,16 @@
 .project-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   flex-wrap: wrap;
-}
+  margin: 0 -1rem;
 
-.project-card {
-  border: 1px solid #ccc;
-  width: 30%;
-  margin: 1rem .5rem;
+  /*&:after {
+    content: "";
+    flex: auto;
+  }*/
 
-  .project-card-thumb {
-    width: 100%;
-
-    img {
-      display: block;
-      width: 100%;
-
-    }
+  app-project-card {
+    width: calc(100% / 3 - 2rem);
+    margin: 1rem;
   }
 }
