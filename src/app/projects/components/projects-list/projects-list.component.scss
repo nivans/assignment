@@ -1,0 +1,21 @@
+.project-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  width: 30%;
+  margin: 1rem .5rem;
+
+  .project-card-thumb {
+    width: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+
+    }
+  }
+}

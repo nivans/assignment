@@ -1,0 +1,42 @@
+<h1>Projects</h1>
+
+<div class="content-box">
+  <div class="project-list-filter">
+
+  </div>
+
+  <div class="project-list">
+
+    <div class="project-card" *ngFor="let project of projects">
+      <div class="project-card-thumb">
+        <img src="{{ project.thumbnail }}" />
+      </div>
+      <div class="project-card-status">
+        {{ project.status }}
+      </div>
+
+      <h2 class="project-card__title">
+        {{ project.title }}
+      </h2>
+
+      <p class="project-card__description">
+        {{ project.description }}
+      </p>
+
+      <footer class="project-card-footer">
+        <div class="project-card-location">
+          <i class="fa fa-location-arrow"></i>
+          {{ project.location }}
+        </div>
+        <div class="project-card-location">
+          <i class="fa fa-location-arrow"></i>
+          {{ project.author }}
+        </div>
+        <div class="project-card-location">
+          <i class="fa fa-location-arrow"></i>
+          {{ project.date }}
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>

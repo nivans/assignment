@@ -1,0 +1,45 @@
+.app-navigation {
+  position: fixed;
+  display: block;
+  top: 70px;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 1);
+  transition: width .3s ease-in;
+
+  &:hover {
+    width: 150px;
+  }
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-left: 3px solid transparent;
+    cursor: pointer;
+
+    .fas {
+      flex: 1;
+      display: block;
+      width: 57px;
+      font-size: 1.5rem;
+    }
+
+    &.menu__btn_active {
+      border-left: 3px solid #333;
+    }
+  }
+}

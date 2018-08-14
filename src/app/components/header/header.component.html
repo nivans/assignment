@@ -1,0 +1,37 @@
+<header class="page-header">
+  <div class="logo">
+    <a routerLink="/">
+      <img src="/assets/images/logo.png" />
+    </a>
+  </div>
+
+  <div class="page-header-right">
+    <div class="page-header-right__item
+                search">
+      <input class="search__input"
+             [ngClass]="{'search__input_active': isSearchActive}"
+             (blur)="isSearchActive = false" />
+
+      <button *ngIf="!isSearchActive"
+              class="page-header__btn"
+              (click)="isSearchActive = true">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+
+    <div class="page-header-right__item notification">
+      <button class="page-header__btn">
+        <i class="fa fa-bell"></i>
+      </button>
+    </div>
+
+    <div class="page-header-right__item user">
+      <button class="page-header__btn page-header__btn_caret user__btn">
+        <div class="user-avatar">
+          <img src="/assets/images/img_avatar.png" />
+        </div>
+        <span class="user__name">James Payton</span>
+      </button>
+    </div>
+  </div>
+</header>
