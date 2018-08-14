@@ -1,3 +1,5 @@
+@import "../../styles/common";
+
 .app-navigation {
   position: fixed;
   display: block;
@@ -7,11 +9,12 @@
   height: 100%;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 1);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
   transition: width .3s ease-in;
+  z-index: 9999;
 
   &:hover {
-    width: 150px;
+    width: 200px;
   }
 }
 
@@ -19,23 +22,35 @@
   list-style-type: none;
   padding: 0;
 
-  .menu__btn {
+  .menu-item {
+    position: relative;
+    width: 200px;
+    height: 60px;
+  }
+
+  .menu-btn {
+    @extend .btn-clear;
+
+    position: absolute;
     display: flex;
     align-items: center;
-    background: none;
-    border: none;
     height: 60px;
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
     border-left: 3px solid transparent;
     cursor: pointer;
 
-    .fas {
-      flex: 1;
+    .menu-btn__icon {
+      flex: 1 1 auto;
       display: block;
       width: 57px;
       font-size: 1.5rem;
+      flex-grow: 0;     /* do not grow   - initial value: 0 */
+      flex-shrink: 0;   /* do not shrink - initial value: 1 */
+      flex-basis: 57px;
+    }
+
+    .menu-btn__text {
+
     }
 
     &.menu__btn_active {

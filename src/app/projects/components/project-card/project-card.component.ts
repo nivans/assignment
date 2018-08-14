@@ -9,6 +9,7 @@ import { Project } from '../../interface/project';
 export class ProjectCardComponent implements OnInit {
   @Input('project')
     project: Project;
+
   constructor() { }
 
   ngOnInit() {

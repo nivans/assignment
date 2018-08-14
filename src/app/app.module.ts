@@ -8,8 +8,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProjectsListComponent } from './projects/components/projects-list/projects-list.component';
 import { ProjectsModule } from './projects/projects.module';
 
-// import 'rxjs/add/observable/from';
-
 const routes: Routes = [
   {
     path: 'projects',
